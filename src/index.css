@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=Cinzel:wght@400..900&family=Oswald:wght@200..700&family=Yuji+Mai&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .paused {
+        animation-play-state: paused;
+    }
+}
+
+
+
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
